@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.scss';
 import Head from "./components/Head";
+import StudentList from "./components/StudentList";
 
 class App extends Component {
   state={
@@ -47,6 +48,7 @@ class App extends Component {
     return (
       <div data-testid="app" className="App">
         <Head />
+        <StudentList students={this.state.students}/>
       </div>
     );
   }
