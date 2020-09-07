@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.scss';
 import Head from "./components/Head";
 import StudentList from "./components/StudentList";
+import GroupList from "./components/GroupList";
 
 class App extends Component {
   state={
@@ -44,10 +45,15 @@ class App extends Component {
           ],
   }
 
+  // onButton = () => {
+  //     this.props.history.push('/group');
+  // }
+
   render() {
     return (
       <div data-testid="app" className="App">
         <Head />
+        <GroupList />
         <StudentList students={this.state.students}/>
       </div>
     );
