@@ -53,7 +53,6 @@ class App extends Component {
     return (
       <div data-testid="app" className="App">
         <Head />
-        <GroupList />
         <StudentList students={this.state.students}/>
       </div>
     );
